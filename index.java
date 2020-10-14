@@ -1,7 +1,9 @@
 void setup() {
 	size(500, 500);
 }
-
+int x = 250;
+int y = 200; 
+int d = 100; 
 void draw() {
 // Step 1: Write code that draws the following screenshots 
 // with hard-coded values. (Feel free to use colors 
@@ -16,10 +18,15 @@ void draw() {
 
 // Step 4: Make it so when the program runs the ball slides off the screen exiting at the point (500, 500)
 
-  background(255);
+  background(175);
   stroke(0);
+fill(255);
 
+ellipse(x, y, d, d)
+x--;
+y--;
+}
 
-  
-
+void mouseprssed(){
+x = x-1
 }
